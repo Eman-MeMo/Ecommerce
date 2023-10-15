@@ -1,0 +1,10 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "DetailForUser";
+    ViewBag.name = "Add to Cart";
+    ViewBag.link = "/Cart/AddToCart/" + Model.id;
+
+}
+
+<partial name="_Detial" />
+

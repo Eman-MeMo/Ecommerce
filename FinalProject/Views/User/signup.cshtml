@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Sign up";
+}
+@model User
+
+<style>
+    span {
+        font-size: 15px;
+        font-weight: bold
+    }
+</style>
+
+<section style="background-color:#e7e6e6;padding:50px;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div style="border-radius: 1rem;box-shadow: 30px 16px 5px 5px rgba(0, 0, 0, 0.2)">
+                    <div class="row g-0" style="background-color:#fff;border-radius: 1rem">
+                        <div class="col-md-6 col-lg-6 d-none d-md-block" style="padding:0">
+                            <img src="/images/start2.png"
+                                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;height:100%;width:110%" />
+                        </div>
+                        <div class="col-md-6 col-lg-6 d-flex align-items-center">
+                            <div class="card-body p-3 p-lg-4 text-black">
+
+                                <form method="post" asp-action="signup" asp-controller="User">
+
+                                    <div class="d-flex align-items-center pb-1">
+                                        <span class="h1 fw-bold mb-0" style="color:black">Ecommerce</span>
+                                    </div>
+
+                                    <h5 class="fw-normal pb-3" style="letter-spacing: 1px;">Create your account</h5>
+
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example17" asp-for="username">Username</label>
+                                        <input id="form2Example17" class="form-control form-control-lg" asp-for="username" />
+                                        <span asp-validation-for="username" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="password">Password</label>
+                                        <input type="password" id="form2Example27" class="form-control form-control-lg" asp-for="password" />
+                                        <span asp-validation-for="password" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="name">Name</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="name" />
+                                        <span asp-validation-for="name" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="age">Age</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="age" />
+                                        <span asp-validation-for="age" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="address">Address</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="address" />
+                                        <span asp-validation-for="address" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-outline form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="mobileNum">Phone</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="mobileNum" />
+                                        <span asp-validation-for="mobileNum" class="text-danger"></span>
+                                    </div>
+                                    <div class="gender-radio form-group">
+                                        <label class="form-label" for="form2Example27" asp-for="Gender">Gender</label>
+                                        <input type="radio" name="Gender" value="Male" checked style="width:auto;margin-right:5px" asp-for="Gender" />Male
+                                        <input type="radio" name="Gender" value="Female" style="width:auto;margin-right:5px;margin-left:55px" asp-for="Gender" />Feamle
+                                    </div>
+                                    <div class="pt-1">
+                                        <button class="btnn btn-dark btn-lg btn-block" type="submit">Sign Up</button>
+                                    </div>
+                                    <a href="#!" class="small text-muted">Terms of use.</a>
+                                    <a href="#!" class="small text-muted">Privacy policy</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+

@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Product";
+    ViewBag.pagename = "Products";
+    ViewBag.img = "admin.jpg";
+    var categoryNames = ViewBag.CategoryNames as Dictionary<int, string>;
+}
+
+@model List<Product>
+<partial name="_Banner2" />
+<section style="background-color:#e7e6e6;padding:50px">
+    <a href="/Product/New" class="btn btn-outline-dark" style="text-align:center;background-color:black;
+color:#fff;font-size:1.3rem;width: 119px;height: 50px;margin-bottom:30px">New</a>
+    <table class="table" style="border-color:#c7cbd0;">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Category</th>
+                <th scope="col">Description</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                @if (p.mount == 0)
+                {
+                    <tr style="color:red;">
+                        <th>@p.id</th>
+                        <td>@p.name</td>
+                        <td>@p.price</td>
+                        <td>@p.mount</td>
+                        <td>@categoryNames[p.CategoryId]</td>
+                        <td>@p.description</td>
+                        <td><a href="/Product/DetailForAdmin/@p.id" class="btn btn-outline-dark">Detail</a></td>
+                        <td><a href="/Product/Edit/@p.id" class="btn btn-outline-success">Edit</a></td>
+                        <td><a href="/Product/Delete/@p.id" class="btn btn-outline-danger">Delete</a></td>
+                    </tr>
+                }
+                else
+                {
+                    <tr style="margin-bottom:5px;">
+                        <th>@p.id</th>
+                        <td>@p.name</td>
+                        <td>@p.price</td>
+                        <td>@p.mount</td>
+                        <td>@categoryNames[p.CategoryId]</td>
+                        <td>@p.description</td>
+                        <td><a href="/Product/DetailForAdmin/@p.id" class="btn btn-outline-dark">Detail</a></td>
+                        <td><a href="/Product/Edit/@p.id" class="btn btn-outline-success">Edit</a></td>
+                        <td><button onclick="confirmDelete(@p.id)" class="btn btn-outline-danger" style="text-transform:none;margin:0px;">Delete</button></td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</section>
+<script>
+    function confirmDelete(id) {
+        var confirmation = confirm("Are you sure to delete this Product?!");
+        if (confirmation) {
+            window.location.href = "/Product/Delete/" + id;
+        }
+    }
+</script>
+
+
+
+

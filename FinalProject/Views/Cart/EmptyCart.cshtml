@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "EmptyCart";
+}
+@{
+    ViewData["Title"] = "Cart";
+    ViewBag.pagename = "Shopping Cart";
+    ViewBag.img = "hero-image.jpg";
+
+}
+
+<partial name="_Banner2" />
+
+<div class="cardBody padding-large">
+    <div class="card">
+        <div class="cardRow">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="cardRow">
+                        <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                        <div class="col align-self-center text-left text-muted" style="font-size:15px">0 items</div>
+                    </div>
+                </div>
+                <h1 style="font-style: italic;margin-left: 30px;" class="text-muted">
+                    Empty Cart
+                </h1>
+                <div class="back-to-shop"><a href="/Product/showForUser">&leftarrow;<span class="text-muted" style="margin-left:5px">Back to shop</span></a></div>
+            </div>
+            <div class="col-md-4 summary">
+                <div><h2>Summary</h2></div>
+                <div class="cardRow" style="margin-bottom:10px">
+                    <div class="col" style="padding-left:0;">ITEMS 0</div>
+                    <div class="col text-right">&euro; 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

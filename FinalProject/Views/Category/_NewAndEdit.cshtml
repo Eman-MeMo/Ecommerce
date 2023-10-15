@@ -1,0 +1,32 @@
+﻿@model Category
+
+<style>
+    input {
+        width: 60%;
+    }
+
+        input[type=file] {
+            background-color: #fff;
+            border: 1px solid #d2cbcb;
+            border-radius: 3px;
+            color: black;
+        }
+</style>
+<section style="background-color:#e7e6e6" class="padding-xlarge">
+    <div class="form">
+        <form method="post" asp-action=@ViewBag.link asp-controller="Category">
+            <div class="form-group">
+                <label asp-for="name">Name</label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="text-align:center;background-color:black;
+        color:#fff;width: 119px;height: 50px;margin-bottom:30px">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

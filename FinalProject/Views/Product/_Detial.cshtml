@@ -1,0 +1,14 @@
+﻿@model Product
+
+<section style="background-color:#e7e6e6;" class="padding-medium">
+    <div class="box product-item" style="margin-left:10%">
+        <img src="/images/@Model.imag" class="product-image" style="width:400px">
+        <div class="detail">
+            <H2>@Model.name</H2>
+            <h3>$@Model.price</h3>
+            <p>Category: @ViewBag.CategoryName</p>
+            <P>@Model.description</P>
+            <button><a href="@ViewBag.link" style="color:#fff">@ViewBag.name</a></button>
+        </div>
+    </div>
+</section>

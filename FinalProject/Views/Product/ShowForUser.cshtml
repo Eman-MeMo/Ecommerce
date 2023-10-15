@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "ShowForUser";
+}
+@model List<Product>
+<partial name="_Banner" />
+<section id="selling-products" class="product-store bg-light-grey padding-large" style="background-color:#e7e6e6;padding:50px;">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Best selling products</h2>
+        </div>
+        <ul class="tabs list-unstyled">
+            <li data-category-filter="all" class="active tab">All</li>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <li data-category-filter="@category.id" class="tab">@category.name</li>
+            }
+        </ul>
+        <div class="tab-content">
+            <div id="all" data-tab-content class="active">
+                <div class="roww d-flex flex-wrap">
+                    @foreach (Product p in Model)
+                    {
+                        if (p.mount != 0)
+                        {
+                            <div class="product-item col-lg-3 col-md-6 col-sm-6" data-category="@p.CategoryId">
+                                <div class="image-holder">
+                                    <img src="/images/@p.imag" style="height:370px;" class="product-image">
+                                </div>
+                                <div class="cart-concern">
+                                    <div class="cart-button d-flex justify-content-between align-items-center">
+                                        <button type="button" class="btn-wrap cart-link d-flex align-items-center">
+                                            <a href="/Cart/AddToCart/@p.id">
+                                                Add to cart
+                                            </a>
+
+                                        </button>
+                                        <button type="button">
+                                            <a href="/Product/DetailForUser/@p.id">
+                                                <i class="fa-solid fa-expand" style="margin-left:20px;margin-right:50px"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3 class="product-title">
+                                        <a href="single-product.html">@p.name</a>
+                                    </h3>
+                                    <div class="item-price text-primary">$@p.price</div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".tab").click(function () {
+            $(".tab").removeClass("active");
+            $(this).addClass("active");
+            var categoryId = $(this).data("category-filter");
+
+            if (categoryId === "all") {
+                $(".product-item").show();
+            } else {
+                $(".product-item").hide();
+                $(".product-item[data-category='" + categoryId + "']").show();
+            }
+        });
+    });
+</script>
+
+

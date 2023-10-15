@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    ViewBag.pagename = "Shopping Cart";
+    ViewBag.img = "hero-image.jpg";
+    decimal totallyPrice = 0;
+    var productsWithQuantity = ViewBag.productsWithQuantity as List<(Product Product, int Quantity)>;
+}
+
+<partial name="_Banner2" />
+<form method="post" asp-action="Checkout" asp-controller="Cart">
+    <div class="cardBody padding-large">
+        <div class="card">
+            <div class="cardRow">
+                <div class="col-md-8 cart">
+                    <div class="title">
+                        <div class="cardRow">
+                            <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                            <div class="col align-self-center text-left text-muted" style="font-size:15px">@Model.Count items</div>
+                        </div>
+                    </div>
+                    @foreach (var p in Model)
+                    {
+                        int quantity = ViewBag.productQuantities.ContainsKey(p.id) ? ViewBag.productQuantities[p.id] : 0;
+                        if (quantity != 0)
+                        {
+                            <div class="cardRow border-top border-bottom">
+                                <div class="cardRow main align-items-center">
+                                    <div class="col-2"><img class="img-fluid" src="/images/@p.imag"></div>
+                                    <div class="col">
+                                        <div class="cardRow text-muted">Shirt</div>
+                                        <div class="cardRow">@p.name</div>
+                                    </div>
+                                    <div class="col">
+                                        <a href="javascript:void(0);" class="decrease-quantity" data-product-id="@p.id">-</a>
+                                        <span class="quantity" data-product-id="@p.id">@quantity</span>
+                                        <a href="javascript:void(0);" class="increase-quantity" data-product-id="@p.id">+</a>
+                                    </div>
+                                    <div class="col">
+                                        &euro;&nbsp;@{
+                                            p.price *= quantity;
+                                            totallyPrice += p.price;
+                                            @p.price
+                                            ;
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            @if (TempData["ErrorMessage"] != null && TempData["ProductId"] is int tempProductId && tempProductId == p.id)
+                            {
+                                <span style="font-size: 12px;font-weight: bold;margin-left: 28px;" class="text-danger">
+                                    @TempData["ErrorMessage"]
+                                </span>
+                            }
+                        }
+                    }
+                    <div class="back-to-shop"><a href="/Product/showForUser">&leftarrow;<span class="text-muted" style="margin-left:5px">Back to shop</span></a></div>
+                </div>
+                <div class="col-md-4 summary">
+                    <div><h2>Summary</h2></div>
+                    <div class="cardRow" style="margin-bottom:10px">
+                        <div class="col" style="padding-left:0;">ITEMS @Model.Count</div>
+                        <div class="col text-right">&euro; @totallyPrice</div>
+                    </div>
+                    <div class="cardRow" style="margin-bottom:10px">
+                        <div class="col" style="padding-left:0;">FEES </div>
+                        <div class="col text-right">&euro; 5.00</div>
+                    </div>
+                    <div class="cardRow" style="border-top: 1px solid rgba(0,0,0,.1);">
+                        <div class="col" style="padding-left:0;">TOTAL PRICE</div>
+                        <div class="col text-right">
+                            &euro;&nbsp;@{
+                                totallyPrice += 5;
+                                @totallyPrice
+                            }
+                        </div>
+                    </div>
+                    <button style="margin-top:15%" type="submit">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input hidden name="totalPrice" id="totalPrice" value="@totallyPrice">
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".decrease-quantity, .increase-quantity").click(function () {
+            var productId = $(this).data("product-id");
+            var operation = $(this).hasClass("decrease-quantity") ? "decrease" : "increase";
+
+            $.ajax({
+                url: "/Cart/EditQuantity",
+                method: "POST",
+                data: {
+                    productId: productId,
+                    quantity: operation === "increase" ? 1 : -1
+                },
+                success: function (response) {
+                    console.log(response);
+
+                    if (response.success) {
+                        var newQuantity = response.newQuantity;
+                        var quantityElement = $("[data-product-id='" + productId + "'].quantity");
+                        quantityElement.text(newQuantity);
+                        location.reload();
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("AJAX error: " + error);
+                }
+            });
+        });
+    });
+</script>

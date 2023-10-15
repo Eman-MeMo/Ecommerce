@@ -1,0 +1,71 @@
+﻿@model Product
+
+<style>
+    input {
+        width: 60%;
+    }
+
+        input[type=file] {
+            background-color: #fff;
+            border: 1px solid #d2cbcb;
+            border-radius: 3px;
+            color: black;
+        }
+</style>
+<section style="background-color:#e7e6e6;" class="padding-large">
+    <div class="form">
+        <form method="post" asp-action=@ViewBag.link asp-controller="Product">
+            <div class="form-group">
+                <label asp-for="name">Name</label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="price">Price</label>
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mount">Quantity</label>
+                <input asp-for="mount" class="form-control" />
+                <span asp-validation-for="mount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="description">Description</label>
+                <input asp-for="description" class="form-control" />
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="imag">Image</label>
+                <input asp-for="imag" type="file" class="form-control" value="@Model?.imag" />
+                <span asp-validation-for="imag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId"></label>
+                <select name="CategoryId" class="form-control">
+                    @foreach (Category c in ViewBag.categoryNames)
+                    {
+                        @if (Model?.CategoryId == c.id)
+                        {
+
+                            <option value="@c.id" selected>@c.name</option>
+
+                        }
+                        else
+                        {
+                            <option value="@c.id">@c.name</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="text-align:center;background-color:black;
+        color:#fff;width: 119px;height: 50px;margin-bottom:30px">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
