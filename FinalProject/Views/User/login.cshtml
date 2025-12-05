@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Login";
 }
-@model User
+@model UserLoginViewModel
 
 <style>
     input {
@@ -31,13 +31,13 @@
                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
                                     <div class="form-outline mb-4">
-                                        <label class="form-label" for="form2Example17" asp-for="username">Username</label>
-                                        <input id="form2Example17" class="form-control form-control-lg" asp-for="username" />
+                                        <label class="form-label" for="form2Example17" asp-for="Username">Username</label>
+                                        <input id="form2Example17" class="form-control form-control-lg" asp-for="Username" />
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <label class="form-label" for="form2Example27" asp-for="password">Password</label>
-                                        <input id="form2Example27" type="password" asp-for="password" class="form-control form-control-lg" style="margin-bottom:0" />
+                                        <label class="form-label" for="form2Example27" asp-for="Password">Password</label>
+                                        <input id="form2Example27" type="password" asp-for="Password" class="form-control form-control-lg" style="margin-bottom:0" />
                                     </div>
                                     @if (TempData["LoginError"] != null)
                                     {

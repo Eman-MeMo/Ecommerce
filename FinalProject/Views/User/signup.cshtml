@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Sign up";
 }
-@model User
+@model UserSignupViewModel
 
 <style>
     span {
@@ -32,35 +32,35 @@
                                     <h5 class="fw-normal pb-3" style="letter-spacing: 1px;">Create your account</h5>
 
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example17" asp-for="username">Username</label>
-                                        <input id="form2Example17" class="form-control form-control-lg" asp-for="username" />
-                                        <span asp-validation-for="username" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example17" asp-for="Username">Username</label>
+                                        <input id="form2Example17" class="form-control form-control-lg" asp-for="Username" />
+                                        <span asp-validation-for="Username" class="text-danger"></span>
                                     </div>
 
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example27" asp-for="password">Password</label>
-                                        <input type="password" id="form2Example27" class="form-control form-control-lg" asp-for="password" />
-                                        <span asp-validation-for="password" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example27" asp-for="Password">Password</label>
+                                        <input type="password" id="form2Example27" class="form-control form-control-lg" asp-for="Password" />
+                                        <span asp-validation-for="Password" class="text-danger"></span>
                                     </div>
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example27" asp-for="name">Name</label>
-                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="name" />
-                                        <span asp-validation-for="name" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example27" asp-for="Name">Name</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="Name" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
                                     </div>
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example27" asp-for="age">Age</label>
-                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="age" />
-                                        <span asp-validation-for="age" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example27" asp-for="Age">Age</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="Age" />
+                                        <span asp-validation-for="Age" class="text-danger"></span>
                                     </div>
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example27" asp-for="address">Address</label>
-                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="address" />
-                                        <span asp-validation-for="address" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example27" asp-for="Address">Address</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="Address" />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
                                     </div>
                                     <div class="form-outline form-group">
-                                        <label class="form-label" for="form2Example27" asp-for="mobileNum">Phone</label>
-                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="mobileNum" />
-                                        <span asp-validation-for="mobileNum" class="text-danger"></span>
+                                        <label class="form-label" for="form2Example27" asp-for="MobileNum">Phone</label>
+                                        <input id="form2Example27" class="form-control form-control-lg" asp-for="MobileNum" />
+                                        <span asp-validation-for="MobileNum" class="text-danger"></span>
                                     </div>
                                     <div class="gender-radio form-group">
                                         <label class="form-label" for="form2Example27" asp-for="Gender">Gender</label>

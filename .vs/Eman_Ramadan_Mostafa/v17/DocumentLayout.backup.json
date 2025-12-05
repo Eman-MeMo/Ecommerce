@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\wwwroot\\images\\23.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\wwwroot\\images\\23.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\views\\product\\_newandedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\views\\product\\_newandedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\views\\product\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\views\\product\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\validation\\uniqueproductattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\validation\\uniqueproductattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\validation\\uniquecategoryattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\validation\\uniquecategoryattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|c:\\users\\asus\\source\\repos\\ecommarce\\ecommerce\\finalproject\\models\\viewmodels\\categoryviewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E06F524B-721C-47E0-9CE1-BF081A58DEE0}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\models\\viewmodels\\categoryviewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 495,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "23.jpg",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\23.jpg",
+              "RelativeDocumentMoniker": "FinalProject\\wwwroot\\images\\23.jpg",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\23.jpg",
+              "RelativeToolTip": "FinalProject\\wwwroot\\images\\23.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-12-05T18:15:39.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_NewAndEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\_NewAndEdit.cshtml",
+              "RelativeDocumentMoniker": "FinalProject\\Views\\Product\\_NewAndEdit.cshtml",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\_NewAndEdit.cshtml",
+              "RelativeToolTip": "FinalProject\\Views\\Product\\_NewAndEdit.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T18:06:17.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\New.cshtml",
+              "RelativeDocumentMoniker": "FinalProject\\Views\\Product\\New.cshtml",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\New.cshtml",
+              "RelativeToolTip": "FinalProject\\Views\\Product\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T18:06:11.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FinalProject\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "FinalProject\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T18:06:04.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAkwKsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:50:33.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UniqueCategoryAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Validation\\UniqueCategoryAttribute.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Validation\\UniqueCategoryAttribute.cs",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Validation\\UniqueCategoryAttribute.cs",
+              "RelativeToolTip": "FinalProject\\Validation\\UniqueCategoryAttribute.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:52:52.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Models\\ViewModels\\CategoryViewModels\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\ViewModels\\CategoryViewModels\\CategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Models\\ViewModels\\CategoryViewModels\\CategoryViewModel.cs",
+              "RelativeToolTip": "FinalProject\\Models\\ViewModels\\CategoryViewModels\\CategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:52:38.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UniqueProductAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Validation\\UniqueProductAttribute.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Validation\\UniqueProductAttribute.cs",
+              "ToolTip": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\Validation\\UniqueProductAttribute.cs",
+              "RelativeToolTip": "FinalProject\\Validation\\UniqueProductAttribute.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:49:54.461Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 74,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 33,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

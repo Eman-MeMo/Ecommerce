@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "ShowForUser";
 }
-@model List<Product>
+@model List<ProductViewModel>
 <partial name="_Banner" />
 <section id="selling-products" class="product-store bg-light-grey padding-large" style="background-color:#e7e6e6;padding:50px;">
     <div class="container">
@@ -18,7 +18,7 @@
         <div class="tab-content">
             <div id="all" data-tab-content class="active">
                 <div class="roww d-flex flex-wrap">
-                    @foreach (Product p in Model)
+                    @foreach (var p in Model)
                     {
                         if (p.mount != 0)
                         {
@@ -29,13 +29,13 @@
                                 <div class="cart-concern">
                                     <div class="cart-button d-flex justify-content-between align-items-center">
                                         <button type="button" class="btn-wrap cart-link d-flex align-items-center">
-                                            <a href="/Cart/AddToCart/@p.id">
+                                            <a href="/Cart/AddToCart/@p.Id">
                                                 Add to cart
                                             </a>
 
                                         </button>
                                         <button type="button">
-                                            <a href="/Product/DetailForUser/@p.id">
+                                            <a href="/Product/DetailForUser/@p.Id">
                                                 <i class="fa-solid fa-expand" style="margin-left:20px;margin-right:50px"></i>
                                             </a>
                                         </button>
@@ -43,9 +43,9 @@
                                 </div>
                                 <div class="product-detail">
                                     <h3 class="product-title">
-                                        <a href="single-product.html">@p.name</a>
+                                        <a href="single-product.html">@p.Name</a>
                                     </h3>
-                                    <div class="item-price text-primary">$@p.price</div>
+                                    <div class="item-price text-primary">$@p.Price</div>
                                 </div>
                             </div>
                         }

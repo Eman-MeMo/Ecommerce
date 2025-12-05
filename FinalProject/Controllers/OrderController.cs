@@ -1,28 +1,40 @@
 ﻿using FinalProject.Entities;
+using FinalProject.Helpers;
+using FinalProject.Interfaces;
 using FinalProject.Models;
+using FinalProject.Models.ViewModels;
+using FinalProject.Models.ViewModels.OrderViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 
 namespace FinalProject.Controllers
 {
     public class OrderController : Controller
     {
-        EcommerceContext DB = new EcommerceContext();
-        public IActionResult Index()
-        {
-            var usernames = DB.users.ToDictionary(u => u.id, u => u.name);
-            var productNames = DB.products.ToDictionary(p => p.id, p => p.name);
-            ViewBag.usernames = usernames;
-            ViewBag.productNames = productNames;
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            ViewBag.orderItem = DB.orderItems.ToList();
+        private readonly IUnitOfWork unitOfWork;
 
-            return View(DB.orders.ToList());
+        public OrderController(IUnitOfWork _unitOfWork)
+        {
+            unitOfWork = _unitOfWork;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var users = await unitOfWork.UserRepository.GetAllAsync();
+            var products = await unitOfWork.ProductRepository.GetAllAsync();
+            var orders = await unitOfWork.OrderRepository.GetAllAsync();
+            var orderItems = await unitOfWork.OrderItemRepository.GetAllAsync();
+
+            var viewModel = new OrderViewModel
+            {
+                Orders = orders,
+                Usernames = users.ToDictionary(u => u.id, u => u.name),
+                ProductNames = products.ToDictionary(p => p.id, p => p.name),
+                OrderItems = orderItems,
+            };
+
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+
+            return View(viewModel);
         }
     }
 }

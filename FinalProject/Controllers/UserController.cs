@@ -1,119 +1,148 @@
-﻿using FinalProject.Entities;
+﻿using FinalProject.Helpers;
+using FinalProject.Interfaces;
 using FinalProject.Models;
+using FinalProject.Models.ViewModels.UserViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.Controllers
 {
     public class UserController : Controller
     {
-        EcommerceContext DB = new EcommerceContext();
-        public IActionResult Index()
+        private readonly IUnitOfWork unitOfWork;
+
+        public UserController(IUnitOfWork _unitOfWork)
         {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            return View(DB.users.ToList());
+            unitOfWork = _unitOfWork;
         }
-        public IActionResult login()
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+            var users = await unitOfWork.UserRepository.GetAllAsync();
+            return View(users);
         }
+
+        public IActionResult Login()
+        {
+            return View(new UserLoginViewModel());
+        }
+
         [HttpPost]
-        public IActionResult login(User s)
+        public async Task<IActionResult> Login(UserLoginViewModel vm)
         {
-            var user = DB.users.FirstOrDefault(a => a.username == s.username);
-            if (user == null || user.password != s.password)
+            if (!ModelState.IsValid)
+                return View(vm);
+
+            var user = await unitOfWork.UserRepository.GetUserByUsernameAsync(vm.Username);
+
+            if (user == null || user.password != vm.Password)
             {
                 TempData["LoginError"] = "Invalid username or password.";
-                return RedirectToAction("login", "User");
+                return View(vm);
             }
-            else
-            {
-                // Store the user's ID in a session variable
-                HttpContext.Session.SetInt32("UserId", user.id);
 
-                if (user.customer)
-                {
-                    return RedirectToAction("ShowForUser", "Product");
-                }
-                else
-                {
-                    return RedirectToAction("ShowForAdmin", "Product");
-                }
-            }
-        }
+            HttpContext.Session.SetInt32("UserId", user.id);
 
-        public IActionResult signup()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult signup(User s)
-        {
-            if (ModelState.IsValid)
-            {
-                s.customer = true;
-                DB.users.Add(s);
-                DB.SaveChanges();
-
-                // Store the newly created user's ID in a session variable
-                HttpContext.Session.SetInt32("UserId", s.id);
-
+            if (user.customer)
                 return RedirectToAction("ShowForUser", "Product");
-            }
-            else
-            {
-                return View();
-            }
-        }
-        public IActionResult profile()
-        {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Home", "/Product/ShowForUser"));
-            navItems.Add(("Shop", "/Product/ShowForUser"));
-            navItems.Add(("Cart", "/Cart/Index"));
-            navItems.Add(("Profile", "/User/Profile"));
-            ViewBag.navItems = navItems;
-            int? userId = HttpContext.Session.GetInt32("UserId");
 
-            if (userId.HasValue)
-            {
-                return View(DB.users.Find(userId));
-            }
-            else
-            {
-                return View(DB.users.Find(ViewBag.id));
-            }
+            return RedirectToAction("ShowForAdmin", "Product");
         }
-        public IActionResult EditProfile(int id)
+
+        public IActionResult Signup()
         {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Home", "/Product/ShowForUser"));
-            navItems.Add(("Shop", "/Product/ShowForUser"));
-            navItems.Add(("Cart", "/Cart/Index"));
-            navItems.Add(("Profile", "/User/Profile"));
-            ViewBag.navItems = navItems;
-            return View(DB.users.Find(id));
+            return View(new UserSignupViewModel());
         }
+
         [HttpPost]
-        public IActionResult EditProfile(User s)
+        public async Task<IActionResult> Signup(UserSignupViewModel vm)
         {
-            ModelState.Remove("username");
-            if (ModelState.IsValid)
-            {
-                s.customer = true;
-                DB.users.Update(s);
-                DB.SaveChanges();
-                ViewBag.id = s.id;
-                return RedirectToAction("Profile");
+            if (!ModelState.IsValid)
+                return View(vm);
 
-            }
-            return View();
+            var newUser = new User
+            {
+                username = vm.Username,
+                password = vm.Password,
+                name = vm.Name,
+                age = vm.Age,
+                address = vm.Address,
+                Gender = vm.Gender,
+                mobileNum = vm.MobileNum,
+                customer = true
+            };
+
+            await unitOfWork.UserRepository.AddAsync(newUser);
+            await unitOfWork.SaveChangesAsync();
+
+            HttpContext.Session.SetInt32("UserId", newUser.id);
+
+            return RedirectToAction("ShowForUser", "Product");
+        }
+
+        public async Task<IActionResult> Profile()
+        {
+            ViewBag.navItems = NavigationHelper.GetNavItems(true);
+
+            int? id = HttpContext.Session.GetInt32("UserId");
+            if (!id.HasValue)
+                return RedirectToAction("Login");
+
+            var user = await unitOfWork.UserRepository.GetByIdAsync(id.Value);
+
+            var vm = new UserProfileViewModel
+            {
+                Id = user.id,
+                Username = user.username,
+                Name = user.name,
+                Age = user.age,
+                Address = user.address,
+                Gender = user.Gender,
+                MobileNum = user.mobileNum
+            };
+
+            return View(vm);
+        }
+
+        public async Task<IActionResult> EditProfile(int id)
+        {
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+
+            var user = await unitOfWork.UserRepository.GetByIdAsync(id);
+
+            var vm = new UserEditProfileViewModel
+            {
+                Id = user.id,
+                Username = user.username,
+                Password = user.password,
+                Name = user.name,
+                Age = user.age,
+                Address = user.address,
+                Gender = user.Gender,
+                MobileNum = user.mobileNum
+            };
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(UserEditProfileViewModel vm)
+        {
+            if (!ModelState.IsValid)
+                return View(vm);
+
+            var user = await unitOfWork.UserRepository.GetByIdAsync(vm.Id);
+
+            user.name = vm.Name;
+            user.age = vm.Age;
+            user.address = vm.Address;
+            user.Gender = vm.Gender;
+            user.mobileNum = vm.MobileNum;
+
+            unitOfWork.UserRepository.Update(user);
+            await unitOfWork.SaveChangesAsync();
+
+            return RedirectToAction("Profile");
         }
     }
 }
-

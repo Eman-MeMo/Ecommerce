@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "EditProfile";
 }
-@model User
+@model UserEditProfileViewModel
 
 <style>
     input {
@@ -18,31 +18,31 @@
 <section style="background-color:#e7e6e6;" class="padding-large">
     <div class="form">
         <form method="post" asp-action="EditProfile" asp-controller="User">
-            <input asp-for="username" hidden />
+            <input asp-for="Username" hidden />
             <div class="form-group">
-                <label asp-for="name">Name</label>
-                <input asp-for="name" class="form-control" />
-                <span asp-validation-for="name" class="text-danger"></span>
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="password">Password</label>
-                <input asp-for="password" type="password" class="form-control" placeholder="If you want to change password Enter new password, else Enter old password" />
-                <span asp-validation-for="password" class="text-danger"></span>
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="If you want to change password Enter new password, else Enter old password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="age">Age</label>
-                <input asp-for="age" class="form-control" />
-                <span asp-validation-for="age" class="text-danger"></span>
+                <label asp-for="Age">Age</label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="address">Address</label>
-                <input asp-for="address" class="form-control" />
-                <span asp-validation-for="address" class="text-danger"></span>
+                <label asp-for="Address">Address</label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="mobileNum">Phone</label>
-                <input asp-for="mobileNum" class="form-control" />
-                <span asp-validation-for="mobileNum" class="text-danger"></span>
+                <label asp-for="MobileNum">Phone</label>
+                <input asp-for="MobileNum" class="form-control" />
+                <span asp-validation-for="MobileNum" class="text-danger"></span>
             </div>
             <div class="gender-radio form-group">
                 <label class="form-label" for="form2Example27" asp-for="Gender">Gender</label>

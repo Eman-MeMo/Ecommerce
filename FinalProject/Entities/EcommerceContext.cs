@@ -6,6 +6,11 @@ namespace FinalProject.Entities
 {
     public class EcommerceContext : DbContext
     {
+        public EcommerceContext(DbContextOptions<EcommerceContext> options)
+        : base(options)
+        {
+        }
+
         public DbSet<User> users { get; set; }
         public DbSet<Product> products { get; set; }
         public DbSet<Category> categories { get; set; }
@@ -14,10 +19,6 @@ namespace FinalProject.Entities
 
         public DbSet<CartProduct> cartProducts { get; set; }
         public DbSet<OrderItem> orderItems { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=LAPTOP-M0HFSPB5;Database=Ecommerce;Trusted_Connection=True;Encrypt=False");
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {   //composite primary key
             modelBuilder.Entity<CartProduct>()

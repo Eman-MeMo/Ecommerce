@@ -4,7 +4,7 @@
     ViewBag.img = "admin.jpg";
 }
 
-@model List<Category>
+@model List<CategoryViewModel>
 <partial name="_Banner2" />
 <section style="background-color:#e7e6e6;padding:50px;">
     <a href="/Category/New" class="btn btn-outline-dark" style="text-align:center;background-color:black;
@@ -20,10 +20,10 @@ color:#fff;font-size:1.3rem;width: 119px;height: 50px;margin-bottom:30px">New</a
             @foreach (var c in Model)
             {
                 <tr>
-                    <th>@c.id</th>
-                    <td>@c.name</td>
-                    <td><a href="/Category/Edit/@c.id" class="btn btn-outline-success">Edit</a></td>
-                    <td><button onclick="confirmDelete(@c.id)" class="btn btn-outline-danger" style="text-transform:none;">Delete</button></td>
+                    <th>@c.Id</th>
+                    <td>@c.Name</td>
+                    <td><a href="/Category/Edit/@c.Id" class="btn btn-outline-success">Edit</a></td>
+                    <td><button onclick="confirmDelete(@c.Id)" class="btn btn-outline-danger" style="text-transform:none;">Delete</button></td>
                 </tr>
             }
         </tbody>

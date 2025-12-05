@@ -1,424 +1,428 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FinalProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FinalProject.bundle.scp.css"
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FinalProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FinalProject.40qvmm56z1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\11.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\11.png",
       "PackagePath": "staticwebassets\\images\\11.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\12.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\12.jpg",
       "PackagePath": "staticwebassets\\images\\12.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\13.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\13.png",
       "PackagePath": "staticwebassets\\images\\13.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\14.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\14.png",
       "PackagePath": "staticwebassets\\images\\14.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\15.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\15.png",
       "PackagePath": "staticwebassets\\images\\15.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\21.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\21.png",
       "PackagePath": "staticwebassets\\images\\21.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\22.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\22.jpg",
       "PackagePath": "staticwebassets\\images\\22.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\23.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\23.jpg",
       "PackagePath": "staticwebassets\\images\\23.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\24.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\24.jpg",
       "PackagePath": "staticwebassets\\images\\24.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\25.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\25.png",
       "PackagePath": "staticwebassets\\images\\25.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\31.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\31.jpg",
       "PackagePath": "staticwebassets\\images\\31.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\32.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\32.png",
       "PackagePath": "staticwebassets\\images\\32.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\33.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\33.png",
       "PackagePath": "staticwebassets\\images\\33.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\34.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\34.png",
       "PackagePath": "staticwebassets\\images\\34.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\35.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\35.png",
       "PackagePath": "staticwebassets\\images\\35.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\41.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\41.png",
       "PackagePath": "staticwebassets\\images\\41.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\42.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\42.png",
       "PackagePath": "staticwebassets\\images\\42.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\43.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\43.png",
       "PackagePath": "staticwebassets\\images\\43.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\44.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\44.png",
       "PackagePath": "staticwebassets\\images\\44.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\45.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\45.png",
       "PackagePath": "staticwebassets\\images\\45.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\51.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\51.jpg",
       "PackagePath": "staticwebassets\\images\\51.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\51.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\51.png",
       "PackagePath": "staticwebassets\\images\\51.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\52.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\52.jpg",
       "PackagePath": "staticwebassets\\images\\52.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\53.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\53.jpg",
       "PackagePath": "staticwebassets\\images\\53.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\54.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\54.png",
       "PackagePath": "staticwebassets\\images\\54.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\55.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\55.png",
       "PackagePath": "staticwebassets\\images\\55.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\a.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\a.jpg",
       "PackagePath": "staticwebassets\\images\\a.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\admin.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\admin.jpg",
       "PackagePath": "staticwebassets\\images\\admin.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\banner1.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\banner1.jpg",
       "PackagePath": "staticwebassets\\images\\banner1.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\banner2.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\banner2.jpg",
       "PackagePath": "staticwebassets\\images\\banner2.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\curly-divider.svg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\curly-divider.svg",
       "PackagePath": "staticwebassets\\images\\curly-divider.svg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\hero-image.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\hero-image.jpg",
       "PackagePath": "staticwebassets\\images\\hero-image.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\hero-image1.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\hero-image1.jpg",
       "PackagePath": "staticwebassets\\images\\hero-image1.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image1.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image1.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image1.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image2.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image2.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image2.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image3.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image3.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image3.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image4.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image4.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image4.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image5.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image5.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image5.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\insta-image6.jpg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\insta-image6.jpg",
       "PackagePath": "staticwebassets\\images\\insta-image6.jpg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\main-logo.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\main-logo.png",
       "PackagePath": "staticwebassets\\images\\main-logo.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\ns-arrow-right.svg",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\ns-arrow-right.svg",
       "PackagePath": "staticwebassets\\images\\ns-arrow-right.svg"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\images\\start2.png",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\images\\start2.png",
       "PackagePath": "staticwebassets\\images\\start2.png"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\js\\plugins.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\20109\\source\\repos\\Eman_Ramadan_Mostafa\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\asus\\source\\repos\\ecommarce\\Ecommerce\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FinalProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FinalProject.Microsoft.AspNetCore.StaticWebAssets.props",

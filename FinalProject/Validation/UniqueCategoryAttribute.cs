@@ -1,4 +1,5 @@
 ﻿using FinalProject.Entities;
+using FinalProject.Interfaces;
 using FinalProject.Models;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,22 +7,33 @@ namespace FinalProject.Validation
 {
     public class UniqueCategoryAttribute : ValidationAttribute
     {
-        EcommerceContext DB = new EcommerceContext();
-
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
-            string uniqueName = value.ToString();
-            Category category = validationContext.ObjectInstance as Category;
-            int idToIgnore = category.id;
-            Category categoryFromDB = DB.categories.FirstOrDefault(c => c.name == uniqueName);
-            if (categoryFromDB == null || idToIgnore != 0)
+            if (value == null) return ValidationResult.Success;
+
+            var unitOfWork = validationContext.GetService(typeof(IUnitOfWork)) as IUnitOfWork;
+            if (unitOfWork == null)
+                return new ValidationResult("UnitOfWork not available.");
+
+            string uniqueName = value.ToString() ?? "";
+
+            var categoryInstance = validationContext.ObjectInstance;
+            int idToIgnore = 0;
+
+            var idProp = categoryInstance.GetType().GetProperty("id");
+            if (idProp != null)
             {
+                var idVal = idProp.GetValue(categoryInstance);
+                if (idVal != null)
+                    idToIgnore = (int)idVal;
+            }
+
+            var categoryFromDB = unitOfWork.CategoryRepository.GetCategoryByName(uniqueName).Result;
+
+            if (categoryFromDB == null || categoryFromDB.id == idToIgnore)
                 return ValidationResult.Success;
-            }
-            else
-            {
-                return new ValidationResult("Name already Exists !");
-            }
+
+            return new ValidationResult("Category name already exists!");
         }
     }
 }

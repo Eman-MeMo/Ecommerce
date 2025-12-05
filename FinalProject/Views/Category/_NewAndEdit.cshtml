@@ -1,4 +1,4 @@
-﻿@model Category
+﻿@model CategoryViewModel
 
 <style>
     input {
@@ -16,9 +16,9 @@
     <div class="form">
         <form method="post" asp-action=@ViewBag.link asp-controller="Category">
             <div class="form-group">
-                <label asp-for="name">Name</label>
-                <input asp-for="name" class="form-control" />
-                <span asp-validation-for="name" class="text-danger"></span>
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary" style="text-align:center;background-color:black;
         color:#fff;width: 119px;height: 50px;margin-bottom:30px">

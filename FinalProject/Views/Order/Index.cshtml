@@ -2,11 +2,8 @@
     ViewData["Title"] = "Index";
     ViewBag.pagename = "Orders";
     ViewBag.img = "admin.jpg";
-    var usernames = ViewBag.usernames as Dictionary<int, string>;
-    var productNames = ViewBag.productNames as Dictionary<int, string>;
-    //List<(string product, int quantity)> productList = ViewBag.cartProductList;
 }
-@model List<Order>
+@model OrderViewModel
 <partial name="_Banner2" />
 <section style="background-color:#e7e6e6;padding:50px;">
     <table class="table" style="border-color:transparent;">
@@ -20,19 +17,19 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var order in Model)
+            @foreach (var order in Model.Orders)
             {
                 <tr>
                     <th>@order.id</th>
-                    <td>@usernames[order.UserId]</td>
+                    <td>@Model.Usernames[order.UserId]</td>
                     <td>@order.totalPrice</td>
                     <td>@order.date</td>
                     <td>
-                        @foreach (var item in ViewBag.orderItem)
+                        @foreach (var item in Model.OrderItems)
                         {
                             @if (item.OrderId == order.id)
                             {
-                                <span style="margin-right:5px;"><span style="margin-right:5px;">@item.quantity</span>@productNames[item.ProductId],</span>
+                                <span style="margin-right:5px;"><span style="margin-right:5px;">@item.quantity</span>@Model.ProductNames[item.ProductId],</span>
                             }
                         }
                     </td>

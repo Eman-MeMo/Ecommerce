@@ -1,111 +1,192 @@
-﻿using FinalProject.Entities;
+﻿using FinalProject.Interfaces;
 using FinalProject.Models;
+using FinalProject.Helpers;
 using Microsoft.AspNetCore.Mvc;
+using FinalProject.Models.ViewModels;
+using FinalProject.Models.ViewModels.ProductViewModels;
 
 namespace FinalProject.Controllers
 {
     public class ProductController : Controller
     {
-        EcommerceContext DB = new EcommerceContext();
-        public IActionResult ShowForUser()
+        private readonly IUnitOfWork unitOfWork;
+
+        public ProductController(IUnitOfWork _unitOfWork)
         {
-            ViewBag.Categories = DB.categories.ToList();
-            ViewBag.Products = DB.products.ToList();
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Home", "/Product/ShowForUser"));
-            navItems.Add(("Shop", "/Product/ShowForUser"));
-            navItems.Add(("Cart", "/Cart/Index"));
-            navItems.Add(("Profile", "/User/Profile"));
-            ViewBag.navItems = navItems;
-            return View(DB.products.ToList());
+            unitOfWork = _unitOfWork;
         }
-        public IActionResult ShowForAdmin()
+
+        public async Task<IActionResult> ShowForUser()
         {
-            var categoryNames = DB.categories.ToDictionary(d => d.id, d => d.name);
-            ViewBag.CategoryNames = categoryNames;
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            return View(DB.products.ToList());
-        }
-        public IActionResult DetailForUser(int id)
-        {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Home", "/Product/ShowForUser"));
-            navItems.Add(("Shop", "/Product/ShowForUser"));
-            navItems.Add(("Cart", "/Cart/Index"));
-            navItems.Add(("Profile", "/User/Profile"));
-            ViewBag.navItems = navItems;
-            Product product = DB.products.Find(id);
-            ViewBag.CategoryName = DB.categories.Find(product.CategoryId).name;
-            return View(product);
-        }
-        public IActionResult DetailForAdmin(int id)
-        {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            Product product = DB.products.Find(id);
-            ViewBag.CategoryName = DB.categories.Find(product.CategoryId).name;
-            return View(product);
-        }
-        public IActionResult New()
-        {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            ViewBag.categoryNames = DB.categories.ToList();
-            return View();
-        }
-        [HttpPost]
-        public IActionResult New(Product p)
-        {
-            if (ModelState.IsValid)
+            var products = await unitOfWork.ProductRepository.GetAllAsync();
+            var categories = await unitOfWork.CategoryRepository.GetAllAsync();
+
+            var result = products.Select(p => new ProductViewModel
             {
-                DB.products.Add(p);
-                DB.SaveChanges();
-                return RedirectToAction("ShowForAdmin");
-            }
-            ViewBag.categoryNames = DB.categories.ToList();
-            return View();
+                Id = p.id,
+                Name = p.name,
+                Description = p.description,
+                Price = p.price,
+                CategoryId = p.CategoryId,
+                CategoryName = categories.First(c => c.id == p.CategoryId).name,
+                imag = p.imag,
+                mount = p.mount
+            }).ToList();
+
+            ViewBag.navItems = NavigationHelper.GetNavItems(true);
+            ViewBag.Categories = categories;
+
+            return View(result);
         }
-        public IActionResult Edit(int id)
+
+        public async Task<IActionResult> ShowForAdmin()
         {
-            List<(string Name, string Link)> navItems = new List<(string, string)>();
-            navItems.Add(("Products", "/Product/ShowForAdmin"));
-            navItems.Add(("Categories", "/Category/Index"));
-            navItems.Add(("Customers", "/User/Index"));
-            navItems.Add(("Orders", "/Order/Index"));
-            ViewBag.navItems = navItems;
-            ViewBag.categoryNames = DB.categories.ToList();
-            return View(DB.products.Find(id));
-        }
-        [HttpPost]
-        public IActionResult Edit(Product p)
-        {
-            if (ModelState.IsValid)
+            var products = await unitOfWork.ProductRepository.GetAllAsync();
+            var categories = await unitOfWork.CategoryRepository.GetAllAsync();
+
+            var result = products.Select(p => new ProductViewModel
             {
-                DB.products.Update(p);
-                DB.SaveChanges();
-                return RedirectToAction("ShowForAdmin");
-            }
-            ViewBag.categoryNames = DB.categories.ToList();
-            return View(p);
+                Id = p.id,
+                Name = p.name,
+                Description = p.description,
+                Price = p.price,
+                CategoryId = p.CategoryId,
+                CategoryName = categories.First(c => c.id == p.CategoryId).name,
+                imag = p.imag,
+                mount = p.mount
+            }).ToList();
+
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+            return View(result);
         }
-        public IActionResult Delete(int id)
+
+        public async Task<IActionResult> DetailForUser(int id)
         {
-            var product = DB.products.Find(id);
-            DB.products.Remove(product);
-            DB.SaveChanges();
+            var product = await unitOfWork.ProductRepository.GetByIdAsync(id);
+            var category = await unitOfWork.CategoryRepository.GetByIdAsync(product.CategoryId);
+
+            var vm = new ProductViewModel
+            {
+                Id = product.id,
+                Name = product.name,
+                Description = product.description,
+                Price = product.price,
+                CategoryId = product.CategoryId,
+                CategoryName = category.name,
+                imag = product.imag,
+                mount = product.mount
+            };
+
+            ViewBag.navItems = NavigationHelper.GetNavItems(true);
+            return View(vm);
+        }
+
+        public async Task<IActionResult> DetailForAdmin(int id)
+        {
+            var product = await unitOfWork.ProductRepository.GetByIdAsync(id);
+            var category = await unitOfWork.CategoryRepository.GetByIdAsync(product.CategoryId);
+
+            var vm = new ProductViewModel
+            {
+                Id = product.id,
+                Name = product.name,
+                Description = product.description,
+                Price = product.price,
+                CategoryId = product.CategoryId,
+                CategoryName = category.name,
+                imag = product.imag,
+                mount = product.mount
+            };
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+            return View(vm);
+        }
+
+        public async Task<IActionResult> New()
+        {
+            ViewBag.categoryNames = await unitOfWork.CategoryRepository.GetAllAsync();
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+            return View(new ProductFormViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> New(ProductFormViewModel vm)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.categoryNames = await unitOfWork.CategoryRepository.GetAllAsync();
+                return View(vm);
+            }
+
+            var product = new Product
+            {
+                name = vm.Name,
+                description = vm.Description,
+                price = vm.Price,
+                CategoryId = vm.CategoryId,
+                imag = vm.imag,
+                mount = vm.mount
+            };
+
+            await unitOfWork.ProductRepository.AddAsync(product);
+            await unitOfWork.SaveChangesAsync();
+
+            return RedirectToAction("ShowForAdmin");
+        }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var product = await unitOfWork.ProductRepository.GetByIdAsync(id);
+
+            var vm = new ProductFormViewModel
+            {
+                Id = product.id,
+                Name = product.name,
+                Description = product.description,
+                Price = product.price,
+                CategoryId = product.CategoryId,
+                imag = product.imag,
+                mount = product.mount
+            };
+
+            ViewBag.categoryNames = await unitOfWork.CategoryRepository.GetAllAsync();
+            ViewBag.navItems = NavigationHelper.GetNavItems(false);
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ProductFormViewModel vm)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.categoryNames = await unitOfWork.CategoryRepository.GetAllAsync();
+                return View(vm);
+            }
+
+            var product = await unitOfWork.ProductRepository.GetByIdAsync(vm.Id);
+
+            product.name = vm.Name;
+            product.description = vm.Description;
+            product.price = vm.Price;
+            product.CategoryId = vm.CategoryId;
+            product.mount = vm.mount;
+
+            unitOfWork.ProductRepository.Update(product);
+            await unitOfWork.SaveChangesAsync();
+
+            return RedirectToAction("ShowForAdmin");
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var product = await unitOfWork.ProductRepository.GetByIdAsync(id);
+
+            if (product == null)
+                return NotFound();
+
+            unitOfWork.ProductRepository.Delete(product);
+            await unitOfWork.SaveChangesAsync();
+
             return RedirectToAction("ShowForAdmin");
         }
     }

@@ -2,10 +2,9 @@
     ViewData["Title"] = "Product";
     ViewBag.pagename = "Products";
     ViewBag.img = "admin.jpg";
-    var categoryNames = ViewBag.CategoryNames as Dictionary<int, string>;
 }
 
-@model List<Product>
+@model List<ProductViewModel>
 <partial name="_Banner2" />
 <section style="background-color:#e7e6e6;padding:50px">
     <a href="/Product/New" class="btn btn-outline-dark" style="text-align:center;background-color:black;
@@ -32,29 +31,29 @@ color:#fff;font-size:1.3rem;width: 119px;height: 50px;margin-bottom:30px">New</a
                 @if (p.mount == 0)
                 {
                     <tr style="color:red;">
-                        <th>@p.id</th>
-                        <td>@p.name</td>
-                        <td>@p.price</td>
+                        <th>@p.Id</th>
+                        <td>@p.Name</td>
+                        <td>@p.Price</td>
                         <td>@p.mount</td>
-                        <td>@categoryNames[p.CategoryId]</td>
-                        <td>@p.description</td>
-                        <td><a href="/Product/DetailForAdmin/@p.id" class="btn btn-outline-dark">Detail</a></td>
-                        <td><a href="/Product/Edit/@p.id" class="btn btn-outline-success">Edit</a></td>
-                        <td><a href="/Product/Delete/@p.id" class="btn btn-outline-danger">Delete</a></td>
+                        <td>@p.CategoryName</td>
+                        <td>@p.Description</td>
+                        <td><a href="/Product/DetailForAdmin/@p.Id" class="btn btn-outline-dark">Detail</a></td>
+                        <td><a href="/Product/Edit/@p.Id" class="btn btn-outline-success">Edit</a></td>
+                        <td><a href="/Product/Delete/@p.Id" class="btn btn-outline-danger">Delete</a></td>
                     </tr>
                 }
                 else
                 {
                     <tr style="margin-bottom:5px;">
-                        <th>@p.id</th>
-                        <td>@p.name</td>
-                        <td>@p.price</td>
+                        <th>@p.Id</th>
+                        <td>@p.Name</td>
+                        <td>@p.Price</td>
                         <td>@p.mount</td>
-                        <td>@categoryNames[p.CategoryId]</td>
-                        <td>@p.description</td>
-                        <td><a href="/Product/DetailForAdmin/@p.id" class="btn btn-outline-dark">Detail</a></td>
-                        <td><a href="/Product/Edit/@p.id" class="btn btn-outline-success">Edit</a></td>
-                        <td><button onclick="confirmDelete(@p.id)" class="btn btn-outline-danger" style="text-transform:none;margin:0px;">Delete</button></td>
+                        <td>@p.CategoryName</td>
+                        <td>@p.Description</td>
+                        <td><a href="/Product/DetailForAdmin/@p.Id" class="btn btn-outline-dark">Detail</a></td>
+                        <td><a href="/Product/Edit/@p.Id" class="btn btn-outline-success">Edit</a></td>
+                        <td><button onclick="confirmDelete(@p.Id)" class="btn btn-outline-danger" style="text-transform:none;margin:0px;">Delete</button></td>
                     </tr>
                 }
             }
